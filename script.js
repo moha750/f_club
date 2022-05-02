@@ -12,9 +12,9 @@ image.onload = function () {
 function drawImage() {
 	// ctx.clearRect(0, 0, canvas.width, canvas.height)
 	ctx.drawImage(image, 0, 0, canvas.width, canvas.height)
-	ctx.font = '60px TheSans'
+	ctx.font = '40px TheSans'
 	ctx.fillStyle = '#ffffff'
-	ctx.fillText(nameInput.value, 600, 780)
+	ctx.fillText(nameInput.value, 330, 500)
 }
 
 nameInput.addEventListener('input', function () {
@@ -23,5 +23,5 @@ nameInput.addEventListener('input', function () {
 
 Download.addEventListener('click', function () {
 	Download.href = canvas.toDataURL('image/jpg')
-	Download.download = 'معايدة نادي تِرحال - ' + nameInput.value
+	Download.download = 'معايدة نادي الفضل بالفضول - ' + nameInput.value
 })
